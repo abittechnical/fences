@@ -1,9 +1,8 @@
 'use client'
 
 import { useRouter } from 'next/navigation'
+import { Button } from '@/ui/button'
 import { X } from 'lucide-react'
-
-import { Button } from '@/components/ui/button'
 
 // Import the preview components from the main page
 // This is a simplified version for demonstration

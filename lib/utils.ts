@@ -1,5 +1,6 @@
 // Tremor Raw cx [v0.0.0]
 
+import { experiments } from '@/data/experiments-store'
 import clsx, { type ClassValue } from 'clsx'
 import { twMerge } from 'tailwind-merge'
 
@@ -37,3 +38,7 @@ export const hasErrorInput = [
   // ring color
   'ring-red-200 dark:ring-red-700/30',
 ]
+
+// This would normally come from a database
+export const getExperimentData = (slug: string) =>
+  experiments[slug as keyof typeof experiments] || experiments['glassmorphism-ui']
