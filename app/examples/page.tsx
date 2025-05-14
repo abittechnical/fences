@@ -1,18 +1,9 @@
 'use client'
 
-import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 
-import { useMounted } from '@/hooks/use-mounted'
-
 export default function HomePage() {
-  const isMounted = useMounted()
-
-  if (!isMounted()) {
-    return null
-  }
-
   return (
     <div className="bg-page min-h-screen font-sans antialiased">
       <div className="container mx-auto px-4 py-8 md:py-12">

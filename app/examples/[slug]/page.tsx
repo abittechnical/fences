@@ -1,7 +1,12 @@
 'use client'
 
 import Link from 'next/link'
-import { useRouter, useSearchParams } from 'next/navigation'
+import { useParams, useRouter, useSearchParams } from 'next/navigation'
+import { BrutalistPreview } from '@/experiments/brutalist-preview'
+import { DarkModePreview } from '@/experiments/dark-mode-preview'
+import { GlassmorphismPreview } from '@/experiments/glassmorphism-preview'
+import { MicroInteractionsPreview } from '@/experiments/micro-interactions-preview'
+import { NeumorphicPreview } from '@/experiments/neumorphic-preview'
 import { Badge } from '@/ui/badge'
 import { Button } from '@/ui/button'
 import { Separator } from '@/ui/separator'
@@ -22,7 +27,8 @@ import {
 
 import { getExperimentData } from '@/lib/utils'
 
-export default function ExperimentPage({ params }: { params: { slug: string } }) {
+export default function ExperimentPage() {
+  const params = useParams<{ slug: string }>()
   const experiment = getExperimentData(params.slug)
   const router = useRouter()
   const searchParams = useSearchParams()

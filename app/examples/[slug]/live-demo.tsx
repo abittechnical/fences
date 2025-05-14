@@ -1,14 +1,17 @@
 'use client'
 
-import { useRouter } from 'next/navigation'
+import { useParams, useRouter } from 'next/navigation'
 import { Button } from '@/ui/button'
 import { X } from 'lucide-react'
 
+// import { getExperimentData } from '@/lib/utils'
+
 // Import the preview components from the main page
 // This is a simplified version for demonstration
-const LiveDemoPage = ({ params }: { params: { slug: string } }) => {
+const LiveDemoPage = () => {
   const router = useRouter()
-  const slug = params.slug
+  const { slug } = useParams<{ slug: string }>()
+  // const slug = params.slug
 
   // This would normally come from a database
   const getExperimentType = (slug: string) => {
