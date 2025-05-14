@@ -118,7 +118,7 @@
   /*--cnt-primary: #020a19;*/
   /*--cnt-secondary: #5d5e60;*/
   /*--cnt-tertiary: #a2a5a9;*/
-  /*--cnt-on-bold: #ffffff;*/
+  --cnt-on-inverse: var(--color-black-a12) ;
 
   /*--cnt-accent: #7910ff;*/
   /*--cnt-info: #0068d6;*/

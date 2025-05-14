@@ -26,3 +26,7 @@ export type ThemeAccentColor =
   | 'mint'
   | 'sky'
 export type ThemeGrayColor = 'gray' | 'mauve' | 'slate' | 'sage' | 'olive' | 'sand'
+
+export type PageLayoutProps = Readonly<{
+  children: React.ReactNode
+}>

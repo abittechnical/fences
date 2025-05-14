@@ -5,7 +5,7 @@ export type SiteConfig = typeof siteConfig
 export const siteConfig = {
   name: 'UI Experiments',
   description: 'Poorly designed, barley functional recreations of dribbble shots.',
-  themeNamespace: 'creightit',
+  themeNamespace: 'creight',
   theme: {
     defaultTheme: 'light' as Theme,
     defaultThemeGrayColor: 'sand' as ThemeGrayColor,

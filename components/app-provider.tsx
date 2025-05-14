@@ -53,7 +53,7 @@ function ThemeWatcher() {
   useEffect(() => {
     const media = window.matchMedia('(prefers-color-scheme: dark)')
 
-    function onMediaChange() {
+    const onMediaChange = () => {
       let systemTheme = media.matches ? 'dark' : 'light'
       if (resolvedTheme === systemTheme) {
         setTheme('system')

@@ -3,7 +3,7 @@
   --color-cnt-primary: var(--color-gray-12);
   --color-cnt-secondary: var(--color-gray-11);
   --color-cnt-tertiary: var(--color-gray-10);
-  --color-cnt-on-inverse: var(--color-white-a12);
+  --color-cnt-on-inverse: var(--cnt-on-inverse);
 
   /*--color-cnt-brand: var(--color-brand-11);*/
   /*--color-cnt-brand-bold: var(--color-brand-9);*/

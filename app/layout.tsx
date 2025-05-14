@@ -7,6 +7,7 @@ import '@/styles/globals.css'
 
 import App from 'next/app'
 
+import { PageLayoutProps } from '@/lib/types'
 import { AppProvider } from '@/components/app-provider'
 
 const geistSans = Geist({
@@ -34,11 +35,7 @@ interface RootLayoutProps {
   children: React.ReactNode
 }
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+export default function RootLayout({ children }: PageLayoutProps) {
   return (
     <html lang="en" className="h-full" suppressHydrationWarning>
       <body
@@ -49,7 +46,7 @@ export default function RootLayout({
           'bg-page text-cnt-primary min-h-full font-sans antialiased',
         )}
       >
-        <AppProvider defaultThemeGrayColor="sand" defaultThemeAccentColor="tomato">
+        <AppProvider defaultThemeGrayColor="sand" defaultThemeAccentColor="lime">
           {children}
         </AppProvider>
       </body>
