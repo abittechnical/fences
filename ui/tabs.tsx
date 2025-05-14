@@ -31,7 +31,7 @@ const TabsTrigger = React.forwardRef<
     className={cx(
       // FIXME: move from here
       '[--tw-shadow-color:var(--color-black-a4)]',
-      'ring-offset-page focus-visible:ring-brd-ring data-[state=active]:bg-main data-[state=active]:text-cnt-primary inline-flex items-center justify-center rounded-md px-3 py-1 text-sm font-medium whitespace-nowrap transition-all focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow',
+      'ring-offset-page focus-visible:ring-brd-ring data-[state=active]:bg-page data-[state=active]:text-cnt-primary inline-flex items-center justify-center rounded-md px-3 py-1 text-sm font-medium whitespace-nowrap transition-all focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow',
       className,
     )}
     {...props}
@@ -46,7 +46,7 @@ const TabsContent = React.forwardRef<
   <TabsPrimitive.Content
     ref={ref}
     className={cx(
-      'ring-offset-background focus-visible:ring-ring mt-2 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none',
+      'ring-offset-page focus-visible:ring-ring mt-2 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none',
       className,
     )}
     {...props}
