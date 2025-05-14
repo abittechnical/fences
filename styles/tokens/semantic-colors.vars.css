@@ -115,16 +115,7 @@
 .dark {
   /** Base Tokens **/
   /* Contents */
-  /*--cnt-primary: #020a19;*/
-  /*--cnt-secondary: #5d5e60;*/
-  /*--cnt-tertiary: #a2a5a9;*/
   --cnt-on-inverse: var(--color-black-a12) ;
-
-  /*--cnt-accent: #7910ff;*/
-  /*--cnt-info: #0068d6;*/
-  /*--cnt-success: #128700;*/
-  /*--cnt-warning: #e32d00;*/
-  /*--cnt-danger: #e00018;*/
 
   /* Backgrounds */
   --bg-main: var(--color-gray-3);
