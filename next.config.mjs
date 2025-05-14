@@ -1,16 +1,16 @@
-import { remarkCodeHike, recmaCodeHike } from "codehike/mdx"
-import createMDX from "@next/mdx"
+import createMDX from '@next/mdx'
+import { recmaCodeHike, remarkCodeHike } from 'codehike/mdx'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Configure `pageExtensions`` to include MDX files
-  pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
+  pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
   // Optionally, add any other Next.js config below
 }
 
 /** @type {import('codehike/mdx').CodeHikeConfig} */
 const chConfig = {
-  components: { code: "Code" },
+  components: { code: 'Code' },
 }
 
 const withMDX = createMDX({

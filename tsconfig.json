@@ -23,6 +23,12 @@
     },
     "target": "ES2017"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/(articles)/guides/basic-example/page.mdx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "app/(articles)/guides/basic-example/page.mdx"
+  ],
   "exclude": ["node_modules"]
 }
